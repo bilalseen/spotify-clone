@@ -13,6 +13,10 @@ const BottomTabNavigation = () => {
     <Tab.Navigator
       screenOptions={{
         tabBarLabel: () => null,
+        headerShown: false,
+        tabBarStyle: {
+          backgroundColor: "#121212",
+        },
       }}
     >
       <Tab.Screen
