@@ -2,18 +2,18 @@ import { Dimensions, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height * 0.1,
-    paddingHorizontal: Dimensions.get("window").width * 0.04,
+    width: "100%",
+    height: "auto",
     justifyContent: "flex-start",
     alignItems: "center",
     // backgroundColor: "white",
     flexDirection: "row",
     gap: 10,
   },
+  innerContainer: {},
   profileImage: {
-    width: Dimensions.get("window").height * 0.04,
-    height: Dimensions.get("window").height * 0.04,
+    width: 35,
+    height: 35,
     borderRadius: 50,
   },
 });
