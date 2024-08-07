@@ -11,7 +11,7 @@ export default function Home() {
   const windowHeight = Dimensions.get("window").height;
 
   const ItemSeparator = () => {
-    return <View style={{ height: 10 }} />; // Araya 10 birimlik boşluk ekler
+    return <View style={{ height: 10 }} />;
   };
 
   return (
