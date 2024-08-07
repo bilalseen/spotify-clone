@@ -2,11 +2,11 @@ import { Dimensions, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    height: Dimensions.get("window").height * 0.04,
+    height: 35,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#2a2a2a",
-    paddingHorizontal: Dimensions.get("window").width * 0.04,
+    paddingHorizontal: 15,
     borderRadius: 50,
   },
   containerActive: {
