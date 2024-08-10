@@ -1,4 +1,4 @@
-import { View, Text, StatusBar, FlatList, Dimensions } from "react-native";
+import { View, StatusBar, FlatList, ScrollView } from "react-native";
 import React from "react";
 
 import { styles } from "./Home.style";
@@ -7,45 +7,37 @@ import Playlist from "../../components/Playlist/Playlist";
 import NewReleases from "../../components/NewReleases";
 import HomeData from "../../data/Home/HomeData.json";
 
+import PlaylistSection from "../../components/sections/PlaylistSection";
+import PlaybackControl from "../../components/PlaybackControl";
+
 export default function Home() {
-  const windowHeight = Dimensions.get("window").height;
-
-  const ItemSeparator = () => {
-    return <View style={{ height: 10 }} />;
-  };
-
   return (
     <View style={styles.container}>
       <StatusBar />
-      <Header />
-      <View
-        style={{
-          height: "auto",
-          width: "100%",
-          // backgroundColor: "red",
-        }}
-      >
-        <FlatList
-          numColumns={2}
-          data={HomeData.playlists}
-          renderItem={({ item }) => (
-            <Playlist
-              name={item.name}
-              coverImage={item.coverImage}
-              isItPlaying={false}
-              playlistState={item.id == 3 ? true : false}
-            />
-          )}
-          keyExtractor={(item) => item.id}
-          // ItemSeparatorComponent={ItemSeparator}
-          columnWrapperStyle={{
-            alignItems: "center",
-            justifyContent: "space-between",
-            marginVertical: 5,
-          }}
-        />
-      </View>
-      <NewReleases newReleasesData={HomeData.newReleases} />
+      <PlaybackControl />
+      <ScrollView>
+        <Header />
+        <View style={styles.playlistContainer}>
+          <FlatList
+            numColumns={2}
+            data={HomeData.playlists}
+            renderItem={({ item }) => (
+              <Playlist
+                name={item.name}
+                coverImage={item.coverImage}
+                isItPlaying={item.id == 4 ? true : false}
+                playlistState={false}
+              />
+            )}
+            keyExtractor={(item) => item.id}
+            columnWrapperStyle={styles.columnWrapperStyle}
+          />
+        </View>
+        <NewReleases newReleasesData={HomeData.newReleases} />
+        <PlaylistSection data={HomeData.forYou} />
+        <PlaylistSection data={HomeData.mostPlayedMixes} />
+        <PlaylistSection data={HomeData.recentlyPlayed} />
+      </ScrollView>
     </View>
   );
 }
