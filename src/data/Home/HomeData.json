@@ -1,0 +1,304 @@
+{
+  "playlists": [
+    {
+      "id": 0,
+      "name": "Daily Mix 3",
+      "description": "Relaxing music to unwind.",
+      "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebe94f88ff74ae4ddcab961f97/3/tr/default",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Beğenilen Şarkılar",
+      "description": "Beğenilen Şarkılar",
+      "coverImage": "https://misc.scdn.co/liked-songs/liked-songs-640.png",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Daily Mix 1",
+      "description": "Top hits for a great party.",
+      "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba769f9a960e59a66c1c208fc/1/tr/default",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Derya Uluğ Mix",
+      "description": "Music to help you concentrate.",
+      "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/artist/7A6T0nTpXnPXDUGM1yEjEj/tr/default",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Daily Mix 2",
+      "description": "Soothing sounds for sleep.",
+      "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba00b11c129b27a88fc72f36b/2/tr/default",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "2010's Türkçe Pop",
+      "description": "Timeless rock anthems.",
+      "coverImage": "https://mosaic.scdn.co/640/ab67616d00001e0201ef8a1bf697bc94604cd2acab67616d00001e0212dc87007516871a35430486ab67616d00001e022c2c7f3f9ef52b91d23a198cab67616d00001e028cc814d4032637881228abe9",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Indie Music",
+      "description": "Today's top pop hits.",
+      "coverImage": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8408f339825c44c9b64f087344",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "This Is Doja Cat",
+      "description": "Classic jazz tracks.",
+      "coverImage": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO33svt5-default.jpg",
+      "songs": [
+        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
+        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
+        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
+        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
+        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
+        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
+        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
+        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
+        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
+        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+      ]
+    }
+  ],
+  "newReleases": {
+    "artist": "Billie Eilish",
+    "artistProfileImage": "https://i.scdn.co/image/ab676161000051744a21b4760d2ecb7b0dcdc8da",
+    "coverImage": "https://i.scdn.co/image/ab67616d00001e028b8d8be49f9c4a44b0574144",
+    "tracks": {
+      "title": "Guess featuring Billie Eilish",
+      "type": "Single",
+      "artists": ["Charli xcx", "Billie Eilish"]
+    }
+  },
+  "forYou": {
+    "title": "Bilal İçin Derlendi",
+    "playlists": [
+      {
+        "id": 1,
+        "type": "playlist",
+        "name": "Daily Mix 4",
+        "description": "Coldplay, Imagine Dragons, White Lies and more",
+        "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb1ba8fc5f5c73e7e9313cc6eb/4/tr/default"
+      },
+      {
+        "id": 2,
+        "type": "playlist",
+        "name": "Daily Mix 5",
+        "description": "Lana Del Rey, Billie Eilish, Agnes Obel and more",
+        "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb6c0e160db98c90a773f1422e/5/tr/default"
+      },
+      {
+        "id": 3,
+        "type": "playlist",
+        "name": "Daily Mix 6",
+        "description": "Duman, Yüzyüzeyken Konuşuruz, Kıraç and more",
+        "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebb99cacf8acd5378206767261/6/tr/default"
+      },
+      {
+        "id": 4,
+        "type": "playlist",
+        "name": "Haftalık Keşif",
+        "description": "Haftalık yepyeni müzik derlemen. Yeni keşfetmeye hazır mısın?",
+        "coverImage": "https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/rQeoeazIIMWHugAiiJDUjvozB32p6Jo4f8PCjajVwnVCu4VGbkcqT0tEWycjHnKhHLFV-h3SS-oaXQYSas2tZbDO0BuIwoLRj7H2gxLsQrs=/MTA6MTM6MDBUMDItODAtNA=="
+      },
+      {
+        "id": 5,
+        "type": "playlist",
+        "name": "Yeni Müzik Radarı",
+        "description": "Takip ettiğin sanatçıların en son çıkardığı şarkılar.",
+        "coverImage": "https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb1ba8fc5f5c73e7e9313cc6eb/tr "
+      }
+    ]
+  },
+  "mostPlayedMixes": {
+    "title": "En çok dinlediğin mix'ler",
+    "playlists": [
+      {
+        "id": 1,
+        "type": "playlist",
+        "name": "Semicenk Mix",
+        "artists": "Derya Uluğ, Simge ve KÖFN",
+        "description": "Semicenk ve benzer sanatçılardan seçilmiş şarkılar.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/artist/1CcZoULzFHa8Uhwo6OlQcp/tr/default"
+      },
+      {
+        "id": 2,
+        "type": "playlist",
+        "name": "Hareketli Mix",
+        "artists": "The Weeknd, Macklemore & Ryan Lewis, Lykke Li",
+        "description": "Hareketli şarkılarla dolu enerjik bir mix.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/upbeat/1Xyo4u8uXC1ZmMpatF05PJ/tr/default"
+      },
+      {
+        "id": 3,
+        "type": "playlist",
+        "name": "2010'lar Mix",
+        "artists": "Doja Cat, Hadise, Hande Yener",
+        "description": "2010'ların en iyi şarkılarından oluşan bir mix.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/twenty_tens/5cj0lLjcoR7YOSnhnX0Po5/tr/default"
+      },
+      {
+        "id": 4,
+        "type": "playlist",
+        "name": "Hüzünlü Mix",
+        "artists": "Dedublüman, Ludovico Einaudi, Yüzyüzeyken Konuşuruz",
+        "description": "Melankolik anlar için seçilmiş şarkılar.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/moody/5PRW6j58xEEWL4DDVEITKT/tr/default"
+      },
+      {
+        "id": 5,
+        "type": "playlist",
+        "name": "2000'ler Mix",
+        "artists": "Hande Yener, Lykke Li, Yalın",
+        "description": "2000'lerin en popüler şarkıları.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/two_thousands/08mjMUUjyTchMHCW7evc3R/tr/default"
+      },
+      {
+        "id": 6,
+        "type": "playlist",
+        "name": "Pop Mix",
+        "artists": "Hande Yener, Demet Akalın, Semicenk",
+        "description": "Pop müziğin en iyi şarkıları.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/pop/08mjMUUjyTchMHCW7evc3R/tr/default"
+      }
+    ]
+  },
+  "recentlyPlayed": {
+    "title": "Yakınlarda Çalınanlar",
+    "playlists": [
+      {
+        "id": 1,
+        "type": "playlist",
+        "name": "Daily Mix 4",
+        "artists": "Coldplay, Imagine Dragons, Twenty One Pilots",
+        "description": "Favori sanatçılarınızdan en iyi şarkılar.",
+        "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb1ba8fc5f5c73e7e9313cc6eb/4/tr/default"
+      },
+      {
+        "id": 2,
+        "type": "playlist",
+        "name": "Hip Hop Mix",
+        "artists": "Post Malone, ¥$₮, Internet Money",
+        "description": "En popüler hip hop şarkıları ile dolu bir mix.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/hip_hop/246dkjvS1zLTtiykXe5h60/tr/default"
+      },
+      {
+        "id": 3,
+        "type": "playlist",
+        "name": "Derya Uluğ Mix",
+        "artists": "Hadise, Simge ve Yalın",
+        "description": "Derya Uluğ ve benzer sanatçılardan oluşan bir seçki.",
+        "coverImage": "https://seed-mix-image.spotifycdn.com/v6/img/artist/7A6T0nTpXnPXDUGM1yEjEj/tr/default"
+      },
+      {
+        "id": 4,
+        "type": "playlist",
+        "name": "I WANNA BE YOUR SLAVE",
+        "artists": "Måneskin",
+        "description": "Måneskin'in hit şarkısı.",
+        "coverImage": "https://i.scdn.co/image/ab67616d00001e025aa05015cfa7bd2943c29b21"
+      },
+      {
+        "id": 5,
+        "type": "artist",
+        "name": "Derya Uluğ",
+        "artists": "Derya Uluğ",
+        "description": "Derya Uluğ'un popüler şarkıları.",
+        "coverImage": "https://i.scdn.co/image/ab67616100005174a01e9c88c3259ab0d02a23d8"
+      },
+      {
+        "id": 6,
+        "type": "artist",
+        "name": "Ezhel",
+        "artists": "Ezhel",
+        "description": "Ezhel'in en iyi parçaları.",
+        "coverImage": "https://i.scdn.co/image/ab67616100005174107a201f2039a163564972cf"
+      }
+    ]
+  }
+}
