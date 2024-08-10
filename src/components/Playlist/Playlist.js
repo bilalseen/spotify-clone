@@ -1,5 +1,5 @@
-import { View, Text, Image } from "react-native";
-import React, { useEffect } from "react";
+import { View, Text, Image, TouchableOpacity } from "react-native";
+import React from "react";
 
 import { styles } from "./Playlist.style";
 
@@ -10,6 +10,7 @@ export default function Playlist({
   coverImage,
   isItPlaying,
   playlistState,
+  F,
 }) {
   const capitalizeWords = (string) => {
     return string
@@ -18,7 +19,7 @@ export default function Playlist({
       .join(" ");
   };
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <Image source={{ uri: coverImage }} style={styles.image} />
       <View style={styles.titleContainer}>
         <Text style={styles.text}>{capitalizeWords(name)}</Text>
@@ -29,6 +30,6 @@ export default function Playlist({
           <LucideIcons name="Ellipsis" color={"#1fd660"} size={14} />
         )}
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
