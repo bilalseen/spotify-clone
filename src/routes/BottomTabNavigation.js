@@ -1,9 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 import HomeScreen from "../screens/Home";
 import SearchScreen from "../screens/Search";
 import LibraryScreen from "../screens/Library";
-
 import LucideIcons from "../components/LucideIcons";
 
 const Tab = createBottomTabNavigator();
@@ -12,11 +10,19 @@ const BottomTabNavigation = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarLabel: () => null,
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: "#121212",
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          borderTopWidth: 0,
+          elevation: 0,
+          zIndex: 1,
         },
+        tabBarActiveTintColor: "#fff",
+        tabBarInactiveTintColor: "#b3b3b3",
       }}
     >
       <Tab.Screen
