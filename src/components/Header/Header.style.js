@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
     height: "auto",
     justifyContent: "flex-start",
     alignItems: "center",
-    // backgroundColor: "white",
+    marginVertical: 10,
+    marginTop: 20,
     flexDirection: "row",
     gap: 10,
   },
