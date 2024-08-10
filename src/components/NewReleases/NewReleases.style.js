@@ -1,10 +1,9 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: "auto",
-    // backgroundColor: "blue",
     gap: 10,
   },
   headerContainer: {
@@ -19,8 +18,8 @@ const styles = StyleSheet.create({
   },
   headerTextContainer: {},
   headerTitle: {
-    color: "#7a7a7a",
-    fontSize: 14,
+    color: "#a7a7a7",
+    fontSize: 12,
   },
   headerArtist: {
     color: "#fff",
@@ -30,12 +29,11 @@ const styles = StyleSheet.create({
   cardContainer: {
     width: "100%",
     height: 150,
-    backgroundColor: "red",
     flexDirection: "row",
     borderRadius: 10,
   },
   cardImage: {
-    width: "40%",
+    width: "35%",
     height: "100%",
     borderTopLeftRadius: 10,
     borderBottomLeftRadius: 10,
@@ -43,7 +41,7 @@ const styles = StyleSheet.create({
   cardContentContainer: {
     justifyContent: "space-between",
     backgroundColor: "#2a2a2a",
-    width: "60%",
+    width: "65%",
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
     padding: 20,
