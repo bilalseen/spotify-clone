@@ -2,7 +2,7 @@ import { View, Image } from "react-native";
 import React from "react";
 
 import styles from "./Header.style";
-import Tag from "../Tag";
+import Tag from "../../global/Tag";
 import { useSelector } from "react-redux";
 
 export default function Header() {

@@ -3,7 +3,7 @@ import React from "react";
 
 import { styles } from "./Playlist.style";
 
-import LucideIcons from "../LucideIcons/LucideIcons";
+import LucideIcons from "../../global/LucideIcons";
 
 export default function Playlist({
   name,

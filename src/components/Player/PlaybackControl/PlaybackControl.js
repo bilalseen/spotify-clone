@@ -2,9 +2,9 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
 import styles from "./PlaybackControl.style";
-import LucideIcons from "../LucideIcons";
+import LucideIcons from "../../global/LucideIcons";
 import { useDispatch, useSelector } from "react-redux";
-import { pause, play } from "../../redux/Player/PlayerSlice";
+import { pause, play } from "../../../redux/slices/PlayerSlice";
 
 export default function PlaybackControl() {
   const player = useSelector((state) => state.player);
@@ -33,25 +33,31 @@ export default function PlaybackControl() {
       </View>
       <View style={styles.controlsContainer}>
         <TouchableOpacity>
-          <LucideIcons name="Monitor" color={"#1fd660"} size={30} />
+          <LucideIcons name="Monitor" color={"#1fd660"} size={26} />
         </TouchableOpacity>
-        <TouchableOpacity
-          style={{
-            backgroundColor: "#1fd660",
-            borderRadius: 50,
-            justifyContent: "center",
-            alignItems: "center",
-            width: 30,
-            height: 30,
-          }}
-        >
-          <LucideIcons name="Check" color={"#681311"} size={20} />
-        </TouchableOpacity>
+        {player.isAdded ? (
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#1fd660",
+              borderRadius: 50,
+              justifyContent: "center",
+              alignItems: "center",
+              width: 30,
+              height: 30,
+            }}
+          >
+            <LucideIcons name="Check" color={"#681311"} size={20} />
+          </TouchableOpacity>
+        ) : (
+          <TouchableOpacity>
+            <LucideIcons name="CirclePlus" color={"#fff"} size={26} />
+          </TouchableOpacity>
+        )}
         <TouchableOpacity onPress={() => handlePlayerState()}>
           <LucideIcons
             name={player.isPlaying ? "Pause" : "Play"}
             color={"#fff"}
-            size={30}
+            size={26}
           />
         </TouchableOpacity>
       </View>

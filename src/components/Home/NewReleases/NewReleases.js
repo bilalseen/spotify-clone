@@ -2,9 +2,9 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
 import styles from "./NewReleases.style";
-import LucideIcons from "../LucideIcons";
+import LucideIcons from "../../global/LucideIcons";
 import AntDesign from "@expo/vector-icons/AntDesign";
-import HomeData from "../../data/Home/HomeData.json";
+import HomeData from "../../../data/Home/HomeData.json";
 
 export default function NewReleases() {
   const data = HomeData.newReleases;
