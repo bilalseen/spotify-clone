@@ -1,6 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 import HomeScreen from "../screens/Home";
+import DrawerNavigation from "./Home/DrawerNavigation";
 import SearchScreen from "../screens/Search";
+
 import LibraryScreen from "../screens/Library";
 import LucideIcons from "../components/global/LucideIcons";
 
@@ -26,8 +29,8 @@ const BottomTabNavigation = () => {
       }}
     >
       <Tab.Screen
-        name="Home"
-        component={HomeScreen}
+        name="Drawer"
+        component={DrawerNavigation}
         options={{
           tabBarIcon: ({ color, size }) => (
             <LucideIcons name="House" color={color} size={size} />
