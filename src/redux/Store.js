@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import ProfileReducer from "./Profile/ProfileSlice";
-import PlaylistReducer from "./Playlist/PlaylistSlice";
-import PlayerReducer from "./Player/PlayerSlice";
+import ProfileReducer from "./slices/ProfileSlice";
+import PlaylistReducer from "./slices/PlaylistSlice";
+import PlayerReducer from "./slices/PlayerSlice";
 
 const Store = configureStore({
   reducer: {
