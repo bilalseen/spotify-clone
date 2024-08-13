@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/Home";
 import SearchScreen from "../screens/Search";
 import LibraryScreen from "../screens/Library";
-import LucideIcons from "../components/LucideIcons";
+import LucideIcons from "../components/global/LucideIcons";
 
 const Tab = createBottomTabNavigator();
 
