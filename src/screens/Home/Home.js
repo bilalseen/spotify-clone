@@ -7,7 +7,7 @@ import Playlist from "../../components/Home/Playlist";
 import NewReleases from "../../components/Home/NewReleases";
 import HomeData from "../../data/Home/HomeData.json";
 
-import PlaylistSection from "../../components/Home/sections/PlaylistSection";
+import PlaylistSection from "../../sections/Home/PlaylistSection";
 import PlaybackControl from "../../components/Player/PlaybackControl";
 
 export default function Home() {

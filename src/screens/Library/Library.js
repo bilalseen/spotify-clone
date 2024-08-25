@@ -1,12 +1,23 @@
 import { View, Text } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getArtistDetails } from "../../services/spotifyService";
 
 import styles from "./Library.style";
 
 export default function Library() {
+  const [artist, setArtist] = useState(null);
+
+  useEffect(() => {
+    const fetchArtist = async () => {
+      const data = await getArtistDetails("3xs0LEzcPXtgNfMNcHzLIP");
+      setArtist(data);
+    };
+    fetchArtist();
+  }, []);
+
+  if (!artist) return <Text>Loading...</Text>;
   return (
-    <View style={styles.container}>
-      import styles from "./Library.style"
+    <View>
       <Text>Library</Text>
     </View>
   );
