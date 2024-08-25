@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     height: 60,
     backgroundColor: "#681311",
     position: "absolute",
-    bottom: 50,
+    bottom: 55,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
