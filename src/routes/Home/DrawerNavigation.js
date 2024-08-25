@@ -31,7 +31,7 @@ const CustomDrawerContent = ({ navigation }) => {
           style={styles.profileImage}
         />
         <View>
-          <Text style={styles.profileName}>{profile.firstName}</Text>
+          <Text st  yle={styles.profileName}>{profile.firstName}</Text>
           <Text style={styles.profileSubtitle}>Profil görüntüle</Text>
         </View>
       </TouchableOpacity>
