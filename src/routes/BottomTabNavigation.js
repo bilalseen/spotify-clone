@@ -35,6 +35,7 @@ const BottomTabNavigation = () => {
           tabBarIcon: ({ color, size }) => (
             <LucideIcons name="House" color={color} size={size} />
           ),
+          tabBarLabel: "Anasayfa",
         }}
       />
       <Tab.Screen
@@ -44,6 +45,7 @@ const BottomTabNavigation = () => {
           tabBarIcon: ({ color, size }) => (
             <LucideIcons name="Search" color={color} size={size} />
           ),
+          tabBarLabel: "Arama",
         }}
       />
       <Tab.Screen
@@ -53,6 +55,7 @@ const BottomTabNavigation = () => {
           tabBarIcon: ({ color, size }) => (
             <LucideIcons name="Library" color={color} size={size} />
           ),
+          tabBarLabel: "Kütüphane",
         }}
       />
     </Tab.Navigator>
