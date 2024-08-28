@@ -1,24 +1,19 @@
-import { View, Text } from "react-native";
-import React, { useEffect, useState } from "react";
+import { View, Text, Image, Dimensions, ScrollView } from "react-native";
+import React from "react";
 import { getArtistDetails } from "../../services/spotifyService";
 
 import styles from "./Library.style";
+import Header from "../../components/Library/Header";
+import LucideIcons from "../../components/global/LucideIcons";
+import PlaylistCard from "../../components/Library/PlaylistCard";
+import PlaylistSection from "../../sections/Library/PlaylistSection/PlaylistSection";
 
 export default function Library() {
-  const [artist, setArtist] = useState(null);
-
-  useEffect(() => {
-    const fetchArtist = async () => {
-      const data = await getArtistDetails("3xs0LEzcPXtgNfMNcHzLIP");
-      setArtist(data);
-    };
-    fetchArtist();
-  }, []);
-
-  if (!artist) return <Text>Loading...</Text>;
   return (
-    <View>
-      <Text>Library</Text>
+    <View style={styles.container}>
+      <Header />
+      <View style={styles.divider}></View>
+      <PlaylistSection />
     </View>
   );
 }
