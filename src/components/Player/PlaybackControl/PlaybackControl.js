@@ -4,9 +4,9 @@ import React from "react";
 import styles from "./PlaybackControl.style";
 import LucideIcons from "../../global/LucideIcons";
 import { useDispatch, useSelector } from "react-redux";
-import { pause, play } from "../../../redux/slices/PlayerSlice";
+import { pause, play, setLiked } from "../../../redux/slices/PlayerSlice";
 
-export default function PlaybackControl() {
+export default function PlaybackControl({ navigation }) {
   const player = useSelector((state) => state.player);
   const dispatch = useDispatch();
 
@@ -14,53 +14,75 @@ export default function PlaybackControl() {
     dispatch(player.isPlaying ? pause() : play());
   };
 
+  const handleLikeState = () => {
+    dispatch(setLiked());
+  };
+
+  const handleNavigate = () => {
+    navigation.navigate("PlaybackControl");
+  };
+
   return (
-    <View style={styles.container}>
+    <TouchableOpacity onPress={handleNavigate} style={styles.container}>
       <View style={styles.trackInfoContainer}>
         <Image
           source={{
-            uri: "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+            uri: player.songImage,
           }}
           style={styles.image}
         />
         <View>
-          <Text style={styles.trackName}>Ride • Twenty One Pilots</Text>
-          <View style={styles.deviceContainer}>
-            <LucideIcons name="MonitorSmartphone" color={"#1fd660"} size={16} />
-            <Text style={styles.deviceText}>SEN</Text>
-          </View>
+          <Text style={styles.trackName}>
+            {player.songName}
+            {player.isPlayingOnAnotherDevice && " • " + player.artistName}
+          </Text>
+          {player.isPlayingOnAnotherDevice ? (
+            <View style={styles.deviceContainer}>
+              <Image
+                source={require("../../../assets/images/icons/playbackControl/bluetooth.png")}
+                style={{ width: 16, height: 16, resizeMode: "contain" }}
+              />
+              <Text style={styles.deviceText}>SEN</Text>
+            </View>
+          ) : (
+            <Text style={styles.artistName}>{player.artistName}</Text>
+          )}
         </View>
       </View>
       <View style={styles.controlsContainer}>
         <TouchableOpacity>
-          <LucideIcons name="Monitor" color={"#1fd660"} size={26} />
-        </TouchableOpacity>
-        {player.isAdded ? (
-          <TouchableOpacity
-            style={{
-              backgroundColor: "#1fd660",
-              borderRadius: 50,
-              justifyContent: "center",
-              alignItems: "center",
-              width: 30,
-              height: 30,
-            }}
-          >
-            <LucideIcons name="Check" color={"#681311"} size={20} />
-          </TouchableOpacity>
-        ) : (
-          <TouchableOpacity>
-            <LucideIcons name="CirclePlus" color={"#fff"} size={26} />
-          </TouchableOpacity>
-        )}
-        <TouchableOpacity onPress={() => handlePlayerState()}>
-          <LucideIcons
-            name={player.isPlaying ? "Pause" : "Play"}
-            color={"#fff"}
-            size={26}
+          <Image
+            source={require("../../../assets/images/icons/playbackControl/phone.png")}
+            style={{ width: 24, height: 24, resizeMode: "contain" }}
           />
         </TouchableOpacity>
+        <TouchableOpacity onPress={handleLikeState}>
+          {player.isLiked ? (
+            <Image
+              source={require("../../../assets/images/icons/playbackControl/liked.png")}
+              style={{ width: 24, height: 24, resizeMode: "contain" }}
+            />
+          ) : (
+            <Image
+              source={require("../../../assets/images/icons/playbackControl/unliked.png")}
+              style={{ width: 24, height: 24, resizeMode: "contain" }}
+            />
+          )}
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => handlePlayerState()}>
+          {player.isPlaying ? (
+            <Image
+              source={require("../../../assets/images/icons/playbackControl/play.png")}
+              style={{ width: 24, height: 24, resizeMode: "contain" }}
+            />
+          ) : (
+            <Image
+              source={require("../../../assets/images/icons/playbackControl/pause.png")}
+              style={{ width: 24, height: 24, resizeMode: "contain" }}
+            />
+          )}
+        </TouchableOpacity>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }

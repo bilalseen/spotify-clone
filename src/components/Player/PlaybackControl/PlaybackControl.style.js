@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    width: "99%",
+    width: "100%",
     height: 60,
     backgroundColor: "#681311",
     position: "absolute",
@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "500",
   },
+  artistName: {
+    color: "#c0bec0",
+    fontSize: 12,
+  },
   deviceText: {
     color: "#1fd660",
     fontSize: 12,
@@ -41,6 +45,7 @@ const styles = StyleSheet.create({
   controlsContainer: {
     flexDirection: "row",
     gap: 10,
+    alignItems: "center",
   },
 });
 
