@@ -3,7 +3,13 @@ import React from "react";
 import styles from "./PlaybackControl.style";
 import LucideIcons from "../../components/global/LucideIcons";
 import { useDispatch, useSelector } from "react-redux";
-import { setLiked, setShuffle } from "../../redux/slices/PlayerSlice";
+import {
+  pause,
+  play,
+  setLiked,
+  setRepeat,
+  setShuffle,
+} from "../../redux/slices/PlayerSlice";
 
 export default function PlaybackControl({ navigation }) {
   const player = useSelector((state) => state.player);
@@ -19,6 +25,23 @@ export default function PlaybackControl({ navigation }) {
 
   const handleShuffleState = () => {
     dispatch(setShuffle());
+  };
+
+  const handlePlayPause = () => {
+    dispatch(player.isPlaying ? pause() : play());
+  };
+
+  const handleRepeatState = () => {
+    dispatch(
+      setRepeat({
+        state:
+          player.repeat === "off"
+            ? "all"
+            : player.repeat === "all"
+            ? "one"
+            : "off",
+      })
+    );
   };
 
   return (
@@ -56,7 +79,7 @@ export default function PlaybackControl({ navigation }) {
                   ? require("../../assets/images/icons/playbackControl/liked.png")
                   : require("../../assets/images/icons/playbackControl/unliked.png")
               }
-              style={styles.iconMedium}
+              style={styles.iconSizeMedium}
             />
           </TouchableOpacity>
         </View>
@@ -75,36 +98,59 @@ export default function PlaybackControl({ navigation }) {
                   ? require("../../assets/images/icons/playbackControl/shuffle-on.png")
                   : require("../../assets/images/icons/playbackControl/shuffle-off.png")
               }
-              style={styles.iconMedium}
+              style={styles.iconSizeMedium}
             />
           </TouchableOpacity>
           <View style={{ flexDirection: "row", gap: 20, alignItems: "center" }}>
-            <LucideIcons name="SkipBack" size={24} color="#fff" />
+            <TouchableOpacity>
+              <Image
+                source={require("../../assets/images/icons/playbackControl/previous.png")}
+                style={styles.iconSizeMedium}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={handlePlayPause}>
+              <Image
+                source={
+                  player.isPlaying
+                    ? require("../../assets/images/icons/Play/pause.png")
+                    : require("../../assets/images/icons/Play/play.png")
+                }
+                style={styles.iconSizeLarge}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image
+                source={require("../../assets/images/icons/playbackControl/next.png")}
+                style={styles.iconSizeMedium}
+              />
+            </TouchableOpacity>
+          </View>
+          <TouchableOpacity onPress={handleRepeatState}>
             <Image
               source={
-                player.isPlaying
-                  ? require("../../assets/images/icons/Play/Pause-1.png")
-                  : require("../../assets/images/icons/Play/Play-1.png")
+                player.repeat === "off"
+                  ? require("../../assets/images/icons/playbackControl/replay-off.png")
+                  : player.repeat === "all"
+                  ? require("../../assets/images/icons/playbackControl/replay-all.png")
+                  : require("../../assets/images/icons/playbackControl/replay-one.png")
               }
-              style={styles.iconLarge}
+              style={styles.iconSizeMedium}
             />
-            <LucideIcons name="SkipForward" size={24} color="#fff" />
-          </View>
-          <LucideIcons name="Repeat" size={24} color="#fff" />
+          </TouchableOpacity>
         </View>
         <View style={styles.controlButtonsContainer}>
           <Image
             source={require("../../assets/images/icons/playbackControl/phone.png")}
-            style={styles.iconSmall}
+            style={styles.iconSizeSmallPlus}
           />
           <View style={{ flexDirection: "row", gap: 20 }}>
             <Image
               source={require("../../assets/images/icons/playbackControl/share.png")}
-              style={styles.iconSmall}
+              style={styles.iconSizeSmall}
             />
             <Image
-              source={require("../../assets/images/icons/playbackControl/replay-off.png")}
-              style={styles.iconSmall}
+              source={require("../../assets/images/icons/playbackControl/queue.png")}
+              style={styles.iconSizeSmall}
             />
           </View>
         </View>

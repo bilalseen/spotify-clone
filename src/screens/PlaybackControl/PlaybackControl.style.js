@@ -80,18 +80,29 @@ export default StyleSheet.create({
   controlButtonsContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
   },
-  iconSmall: {
+  iconSizeSmall: {
+    width: 16,
+    height: 16,
+    resizeMode: "contain",
+  },
+  iconSizeSmallPlus: {
     width: 20,
     height: 20,
     resizeMode: "contain",
   },
-  iconMedium: {
+  iconSizeMedium: {
     width: 24,
     height: 24,
     resizeMode: "contain",
   },
-  iconLarge: {
+  iconSizeMediumPlus: {
+    width: 42,
+    height: 42,
+    resizeMode: "contain",
+  },
+  iconSizeLarge: {
     width: 60,
     height: 60,
     resizeMode: "contain",
