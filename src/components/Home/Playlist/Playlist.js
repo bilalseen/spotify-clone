@@ -6,12 +6,17 @@ import { styles } from "./Playlist.style";
 import LucideIcons from "../../global/LucideIcons";
 
 export default function Playlist({
-  name,
-  coverImage,
+  item,
   isItPlaying,
   playlistState,
-  F,
+  navigation,
 }) {
+  const handleNavigate = () => {
+    navigation.navigate("PlaylistDetails", {
+      item: item,
+    });
+  };
+
   const capitalizeWords = (string) => {
     return string
       .split(" ")
@@ -19,10 +24,10 @@ export default function Playlist({
       .join(" ");
   };
   return (
-    <TouchableOpacity style={styles.container}>
-      <Image source={{ uri: coverImage }} style={styles.image} />
+    <TouchableOpacity style={styles.container} onPress={handleNavigate}>
+      <Image source={{ uri: item.coverImage }} style={styles.image} />
       <View style={styles.titleContainer}>
-        <Text style={styles.text}>{capitalizeWords(name)}</Text>
+        <Text style={styles.text}>{capitalizeWords(item.name)}</Text>
         {isItPlaying && (
           <LucideIcons name="AudioLines" color={"#1fd660"} size={14} />
         )}
