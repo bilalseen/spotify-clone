@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     height: "auto",
     justifyContent: "flex-start",
     gap: 10,
-    paddingHorizontal: 10,
   },
   profileSection: {
     flexDirection: "row",
