@@ -2,7 +2,6 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
 import styles from "./PlaybackControl.style";
-import LucideIcons from "../../global/LucideIcons";
 import { useDispatch, useSelector } from "react-redux";
 import { pause, play, setLiked } from "../../../redux/slices/PlayerSlice";
 
@@ -22,15 +21,17 @@ export default function PlaybackControl({ navigation }) {
     navigation.navigate("PlaybackControl");
   };
 
+  const renderControlIcon = (iconPath) => (
+    <Image
+      source={iconPath}
+      style={{ width: 24, height: 24, resizeMode: "contain" }}
+    />
+  );
+
   return (
     <TouchableOpacity onPress={handleNavigate} style={styles.container}>
       <View style={styles.trackInfoContainer}>
-        <Image
-          source={{
-            uri: player.songImage,
-          }}
-          style={styles.image}
-        />
+        <Image source={{ uri: player.songImage }} style={styles.image} />
         <View>
           <Text style={styles.trackName}>
             {player.songName}
@@ -49,38 +50,32 @@ export default function PlaybackControl({ navigation }) {
           )}
         </View>
       </View>
+
       <View style={styles.controlsContainer}>
         <TouchableOpacity>
-          <Image
-            source={require("../../../assets/images/icons/playbackControl/phone.png")}
-            style={{ width: 24, height: 24, resizeMode: "contain" }}
-          />
+          {renderControlIcon(
+            require("../../../assets/images/icons/playbackControl/phone.png")
+          )}
         </TouchableOpacity>
+
         <TouchableOpacity onPress={handleLikeState}>
-          {player.isLiked ? (
-            <Image
-              source={require("../../../assets/images/icons/playbackControl/liked.png")}
-              style={{ width: 24, height: 24, resizeMode: "contain" }}
-            />
-          ) : (
-            <Image
-              source={require("../../../assets/images/icons/playbackControl/unliked.png")}
-              style={{ width: 24, height: 24, resizeMode: "contain" }}
-            />
-          )}
+          {player.isLiked
+            ? renderControlIcon(
+                require("../../../assets/images/icons/playbackControl/liked.png")
+              )
+            : renderControlIcon(
+                require("../../../assets/images/icons/playbackControl/unliked.png")
+              )}
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => handlePlayerState()}>
-          {player.isPlaying ? (
-            <Image
-              source={require("../../../assets/images/icons/playbackControl/play.png")}
-              style={{ width: 24, height: 24, resizeMode: "contain" }}
-            />
-          ) : (
-            <Image
-              source={require("../../../assets/images/icons/playbackControl/pause.png")}
-              style={{ width: 24, height: 24, resizeMode: "contain" }}
-            />
-          )}
+
+        <TouchableOpacity onPress={handlePlayerState}>
+          {player.isPlaying
+            ? renderControlIcon(
+                require("../../../assets/images/icons/playbackControl/pause.png")
+              )
+            : renderControlIcon(
+                require("../../../assets/images/icons/playbackControl/play.png")
+              )}
         </TouchableOpacity>
       </View>
     </TouchableOpacity>
