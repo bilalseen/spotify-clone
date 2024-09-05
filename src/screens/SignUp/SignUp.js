@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { styles } from "./SignUp.style";
 import CustomSignButton from "../../components/SignUp/CustomSignButton";
@@ -9,8 +9,15 @@ import spotifyIcon from "../../assets/images/icons/signup/spotify-512.png";
 import background from "../../assets/images/icons/signup/Background.png";
 import { StatusBar } from "expo-status-bar";
 import { LinearGradient } from "expo-linear-gradient";
+import { useDispatch } from "react-redux";
+import { setUserState } from "../../redux/slices/ProfileSlice";
 
 export default function SignUp() {
+  const dispatch = useDispatch();
+
+  const handleSignIn = () => {
+    dispatch(setUserState());
+  };
   return (
     <View style={styles.container}>
       <StatusBar />
@@ -27,20 +34,29 @@ export default function SignUp() {
         </View>
       </View>
       <View style={styles.actionButton}>
-        <CustomSignButton text={"Sign up free"} bckgColor={"#1db954"} />
+        <CustomSignButton
+          text={"Sign up free"}
+          bckgColor={"#1db954"}
+          onPress={handleSignIn}
+        />
         <CustomSignButton
           iconSource={iphoneIcon}
           text={"Continue with phone number"}
+          onPress={handleSignIn}
         />
         <CustomSignButton
           iconSource={googleIcon}
           text={"Continue with Google"}
+          onPress={handleSignIn}
         />
         <CustomSignButton
           iconSource={facebookIcon}
           text={"Continue with facebook"}
+          onPress={handleSignIn}
         />
-        <Text style={styles.loginText}>Log in</Text>
+        <TouchableOpacity onPress={handleSignIn}>
+          <Text style={styles.loginText}>Log in</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
