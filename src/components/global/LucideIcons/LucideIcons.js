@@ -1,6 +1,6 @@
 import { icons } from "lucide-react-native";
 
-const Icon = ({ name, color, size }) => {
+const Icon = ({ name, color, size, fillColor }) => {
   const LucideIcon = icons[name];
 
   if (!LucideIcon) {
@@ -8,6 +8,8 @@ const Icon = ({ name, color, size }) => {
     return null;
   }
 
+  if (fillColor)
+    return <LucideIcon color={color} size={size} fill={fillColor} />;
   return <LucideIcon color={color} size={size} />;
 };
 
