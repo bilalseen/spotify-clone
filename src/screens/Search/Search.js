@@ -1,18 +1,20 @@
-import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, FlatList } from "react-native";
 import React from "react";
 
 import { styles } from "./Search.style";
 import { useSelector } from "react-redux";
 import LucideIcons from "../../components/global/LucideIcons";
 
-import CategoryCard from "../../components/Search/CategoryCard";
 import CategoryList from "../../sections/Search/CategoryList/CategoryList";
+import SearchData from "../../data/Search/SearchData.json";
+import ExploreCard from "../../components/Search/ExploreCard";
+import PlaybackControl from "../../components/Player/PlaybackControl";
 
-export default function Search() {
+export default function Search({ navigation }) {
   const profile = useSelector((state) => state.profile);
 
-  return (
-    <View style={styles.container}>
+  const renderHeader = () => (
+    <View style={{ gap: 20, marginVertical: 10 }}>
       <View style={styles.header}>
         <View style={styles.profileContainer}>
           <TouchableOpacity>
@@ -42,6 +44,32 @@ export default function Search() {
         <Text style={styles.placeHolderText}>Ne dinlemek istiyorsun?</Text>
       </View>
       <CategoryList />
+    </View>
+  );
+
+  return (
+    <View style={styles.container}>
+      <PlaybackControl navigation={navigation} />
+      <View style={{ width: "100%", paddingHorizontal: 10 }}>
+        <FlatList
+          data={SearchData.explore}
+          numColumns={2}
+          ListHeaderComponent={renderHeader}
+          keyExtractor={(item) => item.id.toString()}
+          ItemSeparatorComponent={() => <View style={{ height: 10 }} />}
+          columnWrapperStyle={{
+            justifyContent: "space-between",
+            marginBottom: 10,
+          }}
+          renderItem={({ item }) => (
+            <ExploreCard
+              image={item.imageUrl}
+              title={item.title}
+              bcgkColor={item.color}
+            />
+          )}
+        />
+      </View>
     </View>
   );
 }

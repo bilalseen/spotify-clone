@@ -1,18 +1,18 @@
-// Search.style.js
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
-    backgroundColor: "#121212", // Genel arkaplan rengi
-    gap: 20,
+    backgroundColor: "#121212",
+    alignItems: "center",
+    gap: 10,
+    paddingHorizontal: 5,
+    paddingTop: 20,
   },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    // backgroundColor: "gray",
   },
   profileContainer: {
     flexDirection: "row",
