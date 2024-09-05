@@ -3,19 +3,89 @@
     {
       "id": 0,
       "name": "Daily Mix 3",
-      "description": "Relaxing music to unwind.",
+      "description": "David Guetta, Doja Cat ve daha fazlası",
       "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebe94f88ff74ae4ddcab961f97/3/tr/default",
+      "saveCount": "9.789",
+      "owner": "Spotify",
+      "duration": 2312,
       "songs": [
-        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
-        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
-        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
-        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
-        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
-        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
-        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
-        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
-        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
-        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+        {
+          "id": 0,
+          "title": "Memories (feat. Kid Cudi)",
+          "artist": "David Guetta, Kid Cudi",
+          "duration": 210,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048511813115ff10c5f5ae028321d"
+        },
+        {
+          "id": 1,
+          "title": "Need to Know",
+          "artist": "Doja Cat",
+          "duration": 211,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851be841ba4bc24340152e3a79a"
+        },
+        {
+          "id": 2,
+          "title": "Rude Boy",
+          "artist": "Rihanna",
+          "duration": 223,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851ab647295c0c97446c1f1a3b5"
+        },
+        {
+          "id": 3,
+          "title": "How Deep Is Your Love",
+          "artist": "Calvin Harris, Disciples",
+          "duration": 213,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851f4956c3ceefc6fa1cffc6da6"
+        },
+        {
+          "id": 4,
+          "title": "Lean On (feat. MØ & DJ Snake)",
+          "artist": "Major Lazer, MØ, DJ Snake",
+          "duration": 177,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851ed17a14e09145f2986a42726"
+        },
+        {
+          "id": 5,
+          "title": "Can't Feel My Face",
+          "artist": "The Weeknd",
+          "duration": 214,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048517fcead687e99583072cc217b"
+        },
+        {
+          "id": 6,
+          "title": "Me, Myself & I",
+          "artist": "G-Eazy, Bebe Rexha",
+          "duration": 251,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485198acfa8c055deedc25e6081d"
+        },
+        {
+          "id": 7,
+          "title": "Attention",
+          "artist": "Charlie Puth",
+          "duration": 209,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485198acfa8c055deedc25e6081d"
+        },
+        {
+          "id": 8,
+          "title": "Be Mine",
+          "artist": "Ofenbach",
+          "duration": 161,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851e819b286432a124e510dc87b"
+        },
+        {
+          "id": 9,
+          "title": "In My Mind",
+          "artist": "Dynoro, Gigi D'Agostino",
+          "duration": 185,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485128a8a05c3a7ba952c7615ab9"
+        },
+        {
+          "id": 10,
+          "title": "Ride It",
+          "artist": "Regard",
+          "duration": 158,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048515c27813ae019011fcb370c78"
+        }
       ]
     },
     {
@@ -23,35 +93,175 @@
       "name": "Beğenilen Şarkılar",
       "description": "Beğenilen Şarkılar",
       "coverImage": "https://misc.scdn.co/liked-songs/liked-songs-640.png",
+      "saveCount": "9.789",
+      "owner": "user",
+      "duration": 2312,
       "songs": [
-        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
-        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
-        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
-        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
-        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
-        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
-        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
-        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
-        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
-        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+        {
+          "id": 0,
+          "title": "Memories (feat. Kid Cudi)",
+          "artist": "David Guetta, Kid Cudi",
+          "duration": 210,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048511813115ff10c5f5ae028321d"
+        },
+        {
+          "id": 1,
+          "title": "Need to Know",
+          "artist": "Doja Cat",
+          "duration": 211,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851be841ba4bc24340152e3a79a"
+        },
+        {
+          "id": 2,
+          "title": "Rude Boy",
+          "artist": "Rihanna",
+          "duration": 223,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851ab647295c0c97446c1f1a3b5"
+        },
+        {
+          "id": 3,
+          "title": "How Deep Is Your Love",
+          "artist": "Calvin Harris, Disciples",
+          "duration": 213,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851f4956c3ceefc6fa1cffc6da6"
+        },
+        {
+          "id": 4,
+          "title": "Lean On (feat. MØ & DJ Snake)",
+          "artist": "Major Lazer, MØ, DJ Snake",
+          "duration": 177,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851ed17a14e09145f2986a42726"
+        },
+        {
+          "id": 5,
+          "title": "Can't Feel My Face",
+          "artist": "The Weeknd",
+          "duration": 214,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048517fcead687e99583072cc217b"
+        },
+        {
+          "id": 6,
+          "title": "Me, Myself & I",
+          "artist": "G-Eazy, Bebe Rexha",
+          "duration": 251,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485198acfa8c055deedc25e6081d"
+        },
+        {
+          "id": 7,
+          "title": "Attention",
+          "artist": "Charlie Puth",
+          "duration": 209,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485198acfa8c055deedc25e6081d"
+        },
+        {
+          "id": 8,
+          "title": "Be Mine",
+          "artist": "Ofenbach",
+          "duration": 161,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851e819b286432a124e510dc87b"
+        },
+        {
+          "id": 9,
+          "title": "In My Mind",
+          "artist": "Dynoro, Gigi D'Agostino",
+          "duration": 185,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485128a8a05c3a7ba952c7615ab9"
+        },
+        {
+          "id": 10,
+          "title": "Ride It",
+          "artist": "Regard",
+          "duration": 158,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048515c27813ae019011fcb370c78"
+        }
       ]
     },
     {
       "id": 2,
-      "name": "Daily Mix 1",
-      "description": "Top hits for a great party.",
-      "coverImage": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba769f9a960e59a66c1c208fc/1/tr/default",
+      "name": "Chill Pop vibes",
+      "description": "Dive into our Spotify playlist—a mix of love, pop, and viral hits! 🎵 Let the music take you on a journey filled with catchy tunes and heart-throbbing vibes! 💓 Press play and feel the love!",
+      "coverImage": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da841b0d4a6cc4dd59ad5b4ef5b7",
+      "saveCount": "9.789",
+      "owner": "Awake",
+      "duration": 2231,
       "songs": [
-        { "id": 0, "title": "Song 1", "artist": "Artist 1" },
-        { "id": 1, "title": "Song 2", "artist": "Artist 2" },
-        { "id": 2, "title": "Song 3", "artist": "Artist 3" },
-        { "id": 3, "title": "Song 4", "artist": "Artist 4" },
-        { "id": 4, "title": "Song 5", "artist": "Artist 5" },
-        { "id": 5, "title": "Song 6", "artist": "Artist 6" },
-        { "id": 6, "title": "Song 7", "artist": "Artist 7" },
-        { "id": 7, "title": "Song 8", "artist": "Artist 8" },
-        { "id": 8, "title": "Song 9", "artist": "Artist 9" },
-        { "id": 9, "title": "Song 10", "artist": "Artist 10" }
+        {
+          "id": 0,
+          "title": "To Build A Home",
+          "artist": "The Cinematic Orchestra, Patrick Watson",
+          "duration": 371,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851e9101167efda432462dfec58"
+        },
+        {
+          "id": 1,
+          "title": "Another Love",
+          "artist": "Tom Odell",
+          "duration": 244,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048511917a0f3f4152622a040913f"
+        },
+        {
+          "id": 2,
+          "title": "LUNCH",
+          "artist": "Billie Eilish",
+          "duration": 180,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485171d62ea7ea8a5be92d3c1f62"
+        },
+        {
+          "id": 3,
+          "title": "End of Beginning",
+          "artist": "Djo",
+          "duration": 159,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851fddfffec51b4580acae727c1"
+        },
+        {
+          "id": 4,
+          "title": "Dead of Night",
+          "artist": "Anna Curren",
+          "duration": 191,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485177ba0113f9ee3711a83e066a"
+        },
+        {
+          "id": 5,
+          "title": "i like the way you kiss me",
+          "artist": "Artemas",
+          "duration": 143,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851e67611dbbf69a90d0b6cb738"
+        },
+        {
+          "id": 6,
+          "title": "Til Death Do Us Part",
+          "artist": "Mia Baron",
+          "duration": 152,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048517314d1dc345491c27888bdbe"
+        },
+        {
+          "id": 7,
+          "title": "In The Mood",
+          "artist": "Bradley Denniston",
+          "duration": 198,
+          "coverImage": "https://i.scdn.co/image/ab67616d000048515e9012fe01465f01aeb99763"
+        },
+        {
+          "id": 8,
+          "title": "IN TWENTY YEARS",
+          "artist": "Kitty Mack",
+          "duration": 204,
+          "coverImage": "https://i.scdn.co/image/ab67616d0000485104524e036590216dc702f73a"
+        },
+        {
+          "id": 9,
+          "title": "Badass",
+          "artist": "Maggie Ries",
+          "duration": 182,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851d19383e77938acfac5eb3df9"
+        },
+        {
+          "id": 10,
+          "title": "Paper Hearts",
+          "artist": "OLIVIA",
+          "duration": 207,
+          "coverImage": "https://i.scdn.co/image/ab67616d00004851c5b353c97c5f40761377cf4e"
+        }
       ]
     },
     {
@@ -298,6 +508,109 @@
         "artists": "Ezhel",
         "description": "Ezhel'in en iyi parçaları.",
         "coverImage": "https://i.scdn.co/image/ab67616100005174107a201f2039a163564972cf"
+      }
+    ]
+  },
+  "programs": {
+    "title": "Programların",
+    "programs": [
+      {
+        "title": "Adapty Türkiye Podcast",
+        "type": ["Teknoloji"],
+        "description": "Mobil Girişimcilik Sohbeti",
+        "host": "Adapty"
+      },
+      {
+        "title": "Meksika Açmazı",
+        "type": ["Komedi"],
+        "description": "",
+        "host": "Mesut Süre, Anlatanadam, Fazlı Polat"
+      },
+      {
+        "title": "Everyday American English",
+        "type": ["Eğitimsel"],
+        "description": "Improve your English with stories from my daily life in the United States",
+        "host": "Lynne"
+      },
+      {
+        "title": "Slow American English",
+        "type": ["Eğitimsel"],
+        "description": "The podcast for learners of American English",
+        "host": "Karren Doll Tolliver"
+      },
+      {
+        "title": "Into the Story: Learn English with True Stories",
+        "type": ["Eğitimsel", "Hikayeler"],
+        "description": "",
+        "host": "Bree Aesie"
+      },
+      {
+        "title": "Speaking American English Podcast",
+        "type": ["Eğitimsel"],
+        "description": "",
+        "host": "Cody Marosz"
+      },
+      {
+        "title": "Easy Natural English with Liam",
+        "type": ["Eğitim"],
+        "description": "",
+        "host": "Liam"
+      },
+      {
+        "title": "The Speak Englsh With Zach Podcast",
+        "type": ["Eğitim"],
+        "description": "",
+        "host": "Zach"
+      }
+    ]
+  },
+  "daily_music_needs": {
+    "title": "Günlük müzik ihtiyacın",
+    "playlists": [
+      {
+        "title": "Yol Şarkıları",
+        "description": "Müzikler Emir Can İğrek'te, direksiyon sende!",
+        "artists": ["Emir Can İğrek", "Semicenk", "BLOK3", "Simge", "Reynmen"]
+      },
+      {
+        "title": "Yaz Hitleri 2024",
+        "description": "2024 yazına damga vuracak şarkılar.",
+        "artists": ["Lvbel C5", "Semicenk", "BLOK3", "Era7capone", "Simge"]
+      },
+      {
+        "title": "Yaz Ritmi",
+        "description": "Yerli Afro, Latin ve trap ritimleri ile yazın en hareketli listesi.",
+        "artists": []
+      },
+      {
+        "title": "Keşif",
+        "description": "Bağımsız yerli sahneden en taze keşifler.",
+        "artists": ["Mela Bedel", "Exgi Erdoğan", "Aleyna Kalaycı"]
+      },
+      {
+        "title": "Kıyı Boyu",
+        "description": "Melodik Türkçe şarkılarla yaz boyu sahildesin.",
+        "artists": ["Hande Yener", "Tarkan", "Simge", "Yüzyüzeyken Konuşuruz"]
+      },
+      {
+        "title": "Rap Radyo",
+        "description": "Türkçe rapin sevilen isimleri.",
+        "artists": ["Lvbel C5", "BLOK3", "Era7capone", "Ati242", "Ezhel"]
+      },
+      {
+        "title": "Pop Radyo",
+        "description": "Popun sevilen isimleri.",
+        "artists": ["Simge", "Emir Can İğrek", "Amo988", "Burak Buult"]
+      },
+      {
+        "title": "Radar Türkiye",
+        "description": "Geleceğin seslerini dinle.",
+        "artists": ["Selin", "Paptircem", "Ege Can Sandal", "Böyleyken Böyle"]
+      },
+      {
+        "title": "100+",
+        "description": "10 yılda 100 milyonu aşan şarkılar 🏆",
+        "artists": ["Semicenk", "Ezhel", "Dedublüman", "Müslüm Gürses"]
       }
     ]
   }

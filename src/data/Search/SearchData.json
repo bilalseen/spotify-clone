@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "#türkçe pop",
+      "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "title": "#endişe giderici",
+      "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "title": "#downtown vibes",
+      "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "explore": [
+    {
+      "id": 1,
+      "title": "Müzik",
+      "imageUrl": "https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb",
+      "color": "#DC148C"
+    },
+    {
+      "id": 2,
+      "title": "Podcast'ler",
+      "imageUrl": "https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa",
+      "color": "#006450"
+    },
+    {
+      "id": 3,
+      "title": "Canlı Etkinlikler",
+      "imageUrl": "https://concerts.spotifycdn.com/images/live-events_category-image.jpg",
+      "color": "#8400E7"
+    },
+    {
+      "id": 4,
+      "title": "Senin için Hazırlandı",
+      "imageUrl": "https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe",
+      "color": "#1E3264"
+    },
+    {
+      "id": 5,
+      "title": "Yeni Çıkanlar",
+      "imageUrl": "https://i.scdn.co/image/ab67fb8200005caf194fec0fdc197fb9e4fe8e64",
+      "color": "#608108"
+    },
+    {
+      "id": 6,
+      "title": "Yaz",
+      "imageUrl": "https://i.scdn.co/image/ab67fb8200005caf42a36c4c6e38ee8de759c4f8",
+      "color": "#27856A"
+    },
+    {
+      "id": 7,
+      "title": "Pop",
+      "imageUrl": "https://i.scdn.co/image/ab67fb8200005caf3f3de915ef4a9f3eaf242f02",
+      "color": "#8C1932"
+    },
+    {
+      "id": 8,
+      "title": "Hip-Hop",
+      "imageUrl": "https://i.scdn.co/image/ab67fb8200005caff721caeca8f71491473b9e5b",
+      "color": "#2D46B9"
+    },
+    {
+      "id": 9,
+      "title": "Ruh Hali",
+      "imageUrl": "https://i.scdn.co/image/ab67fb8200005cafe542e9b59b1d2ae04b46b91c",
+      "color": "#E1118C"
+    },
+    {
+      "id": 10,
+      "title": "Popüler",
+      "imageUrl": "https://i.scdn.co/image/ab67fb8200005caf8e97784ff1e12e67ae922715",
+      "color": "#B02897"
+    }
+  ]
+}
