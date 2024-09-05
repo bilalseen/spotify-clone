@@ -18,6 +18,7 @@ import { useSelector } from "react-redux";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Feather from "@expo/vector-icons/Feather";
+import PlaylistDetails from "../../screens/PlaylistDetails";
 
 const Drawer = createDrawerNavigator();
 
@@ -31,7 +32,9 @@ const CustomDrawerContent = ({ navigation }) => {
           style={styles.profileImage}
         />
         <View>
-          <Text st  yle={styles.profileName}>{profile.firstName}</Text>
+          <Text st yle={styles.profileName}>
+            {profile.firstName}
+          </Text>
           <Text style={styles.profileSubtitle}>Profil görüntüle</Text>
         </View>
       </TouchableOpacity>
@@ -86,6 +89,7 @@ const DrawerNavigation = () => {
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >
       <Drawer.Screen name="Home" component={HomeScreen} />
+      <Drawer.Screen name="PlaylistDetails" component={PlaylistDetails} />
       <Drawer.Screen name="AddAccount" component={AddAccount} />
       <Drawer.Screen name="ListeningHistory" component={ListeningHistory} />
       <Drawer.Screen name="Updates" component={Updates} />
