@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#121212",
     paddingHorizontal: 10,
-    // gap: 20,
+    paddingTop: 20,
   },
   playlistContainer: {
     height: "auto",
