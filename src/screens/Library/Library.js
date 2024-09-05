@@ -1,16 +1,15 @@
-import { View, Text, Image, Dimensions, ScrollView } from "react-native";
+import { View } from "react-native";
 import React from "react";
-import { getArtistDetails } from "../../services/spotifyService";
 
 import styles from "./Library.style";
 import Header from "../../components/Library/Header";
-import LucideIcons from "../../components/global/LucideIcons";
-import PlaylistCard from "../../components/Library/PlaylistCard";
 import PlaylistSection from "../../sections/Library/PlaylistSection/PlaylistSection";
+import PlaybackControl from "../../components/Player/PlaybackControl";
 
-export default function Library() {
+export default function Library({ navigation }) {
   return (
     <View style={styles.container}>
+      <PlaybackControl navigation={navigation} />
       <Header />
       <View style={styles.divider}></View>
       <PlaylistSection />

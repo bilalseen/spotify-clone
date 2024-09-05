@@ -6,7 +6,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#121212",
     paddingHorizontal: 10,
-    paddingVertical: 50,
+    paddingVertical: 20,
+    paddingBottom: 100,
+    paddingTop: 20,
   },
   divider: {
     width: "100%",
