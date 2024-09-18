@@ -5,6 +5,7 @@ import { Provider, useSelector } from "react-redux";
 import Store from "../redux/Store";
 import SignUp from "../screens/SignUp";
 import PlaybackControl from "../screens/PlaybackControl";
+import Profile from "../screens/Profile";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ const AppNavigator = ({ userLoggedIn }) => {
         {userLoggedIn ? (
           <>
             <Stack.Screen name="Home" component={BottomTabNavigation} />
+            <Stack.Screen name="Profile" component={Profile} />
             <Stack.Screen name="PlaybackControl" component={PlaybackControl} />
           </>
         ) : (
