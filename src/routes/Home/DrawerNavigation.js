@@ -24,9 +24,17 @@ const Drawer = createDrawerNavigator();
 
 const CustomDrawerContent = ({ navigation }) => {
   const profile = useSelector((state) => state.profile);
+
+  const hnaldeNavigateToProfile = () => {
+    navigation.navigate("Profile");
+  };
+
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => null} style={styles.profileContainer}>
+      <TouchableOpacity
+        onPress={hnaldeNavigateToProfile}
+        style={styles.profileContainer}
+      >
         <Image
           source={{ uri: profile.profileImage }}
           style={styles.profileImage}
