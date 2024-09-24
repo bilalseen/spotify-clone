@@ -12,7 +12,7 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     position: "absolute",
-    top: 0,
+    top: 20,
     width: "100%",
   },
   nowPlayingText: {
@@ -29,7 +29,7 @@ export default StyleSheet.create({
     position: "absolute",
     width: "100%",
     bottom: 50,
-    gap: 10,
+    gap: 20,
   },
   songInfoContainer: {
     flexDirection: "row",
@@ -40,6 +40,12 @@ export default StyleSheet.create({
     flexDirection: "row",
     alignItems: "flex-end",
     gap: 10,
+  },
+  songCover: {
+    width: 300,
+    height: 300,
+    borderRadius: 10,
+    marginTop: 150,
   },
   songImage: {
     width: 50,
@@ -103,8 +109,8 @@ export default StyleSheet.create({
     resizeMode: "contain",
   },
   iconSizeLarge: {
-    width: 60,
-    height: 60,
+    width: 80,
+    height: 80,
     resizeMode: "contain",
   },
 });

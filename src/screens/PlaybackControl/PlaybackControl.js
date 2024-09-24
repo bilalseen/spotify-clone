@@ -60,13 +60,14 @@ export default function PlaybackControl({ navigation }) {
         </View>
         <LucideIcons name="EllipsisVertical" size={24} color="#fff" />
       </View>
+      <Image source={{ uri: player.songImage }} style={styles.songCover} />
       <View style={styles.playbackControlsContainer}>
         <View style={styles.songInfoContainer}>
           <View style={styles.songDetails}>
-            <Image
+            {/* <Image
               source={{ uri: player.songImage }}
               style={styles.songImage}
-            />
+            /> */}
             <View>
               <Text style={styles.songNameText}>{player.songName}</Text>
               <Text style={styles.artistNameText}>{player.artistName}</Text>
@@ -86,7 +87,7 @@ export default function PlaybackControl({ navigation }) {
         <View style={styles.progressBarContainer}>
           <View style={styles.progressBar} />
           <View style={styles.timeLabels}>
-            <Text style={styles.timeText}>0:01</Text>
+            <Text style={styles.timeText}>0:00</Text>
             <Text style={styles.timeText}>3:34</Text>
           </View>
         </View>
