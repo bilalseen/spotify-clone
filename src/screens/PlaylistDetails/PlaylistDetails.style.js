@@ -5,7 +5,7 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: "#121212",
     paddingHorizontal: 10,
-    paddingTop: 50,
+    paddingTop: 100,
     alignItems: "center",
   },
   linearGradient: {
