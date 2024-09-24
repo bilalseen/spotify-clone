@@ -13,8 +13,8 @@ export default StyleSheet.create({
     gap: 10,
   },
   coverImage: {
-      width: 50,
-      height: 50,
+    width: 50,
+    height: 50,
   },
   textContainer: {
     gap: 5,
