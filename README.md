@@ -70,7 +70,9 @@ Follow these steps to run the project in your local environment:
 
 ## Screenshots
 
-<div style="text-align: center;">
+<img src="./src/assets/images/README/banner.png" alt="Home Page" height="350" >
+
+<!-- <div style="text-align: center;">
   <table style="margin: 0 auto;">
     <tr>
       <th style="text-align: center;">Authentication</th>
@@ -105,7 +107,7 @@ Follow these steps to run the project in your local environment:
       </td>
     </tr>
   </table>
-</div>
+</div> -->
 
 ## Project Structure
 
